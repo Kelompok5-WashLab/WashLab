@@ -73,7 +73,7 @@ class LogoScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/ws.jpg', height: 100), 
+            Image.asset('assets/ws.png', height: 250), 
           ],
         ),
       ),
