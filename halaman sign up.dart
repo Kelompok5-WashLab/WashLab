@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'halamanlogin.dart'; // Pastikan LoginPage sudah di-import
 
 void main() {
   runApp(const MyApp());
@@ -147,7 +148,13 @@ class _SignUpPageState extends State<SignUpPage> {
                 width: double.infinity,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    // Navigasi ke halaman Login
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => const LoginPage()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF5085A5),
                     shape: RoundedRectangleBorder(
@@ -169,7 +176,13 @@ class _SignUpPageState extends State<SignUpPage> {
                     style: TextStyle(color: Colors.white),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      // Navigasi ke halaman Login
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => const LoginPage()),
+                      );
+                    },
                     child: const Text(
                       'LOG IN',
                       style: TextStyle(
